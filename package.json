@@ -16,5 +16,8 @@
     "url": "https://github.com/aman3520/my-ecommerce-site/issues"
   },
   "homepage": "https://github.com/aman3520/my-ecommerce-site#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "firebase": "^12.0.0"
+  }
 }
