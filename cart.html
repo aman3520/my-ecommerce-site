@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MyBrand – Home</title>
+  <title>MyBrand – Cart</title>
   <link rel="stylesheet" href="styles/main.css" />
   <!-- Firebase SDK -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
@@ -15,7 +15,7 @@
   storageBucket: "ecommerce3520.appspot.com",
   messagingSenderId: "611057703034",
   appId: "1:611057703034:web:8cf71801d17c6e6c2303c3",
-  measurementId: "G-RT1SMKH0YQ" };
+  measurementId: "G-RT1SMKH0YQ"};
   firebase.initializeApp(firebaseConfig);
 </script>
 </head>
@@ -23,12 +23,12 @@
   <header>
     <div class="logo">MyBrand</div>
     <nav class="nav-menu">
-      <a href="#">Home</a>
-      <a href="#product-grid">Products</a>
+      <a href="index.html">Home</a>
+      <a href="index.html#product-grid">Products</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
     </nav>
-      <div class="header-actions">
+    <div class="header-actions">
   <a href="cart.html" class="cart-icon" aria-label="View cart">
     🛒 <span class="cart-count">0</span>
   </a>
@@ -37,33 +37,24 @@
 </div>
 
 
+<script type="module" src="scripts/cart.js"></script>
 
-</div>
-
-    <div class="hamburger-menu">
-      <span></span><span></span><span></span>
-    </div>
-   
   </header>
 
-  <section class="hero-section">
-    <div class="hero-content">
-      <h1>Exclusive Offer: Biggest Sale!</h1>
-      <p>Up to 50% off on select products. Limited time only.</p>
-      <a href="#product-grid" class="cta-button">Shop Now</a>
-    </div>
-  </section>
-
   <main>
-    <section class="product-grid-container">
-      <h2 class="section-title">Featured Products</h2>
-      <div id="product-grid" class="product-grid"></div>
+    <section class="cart-container">
+      <h1>Your Cart</h1>
+      <button class="continue-btn" onclick="location.href='index.html'">← Continue Shopping</button>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary">
+        <div class="summary-line"><span>Total:</span><span id="cart-total">₹0</span></div>
+        <button id="checkout-btn" class="checkout-btn" disabled>Proceed to Checkout</button>
+      </div>
     </section>
   </main>
 
- 
-
-<script src="scripts/app.js" defer></script>
 <script src="scripts/auth.js" defer></script>
+
+
 </body>
 </html>

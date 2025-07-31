@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MyBrand – Home</title>
+  <title>Product Detail – MyBrand</title>
   <link rel="stylesheet" href="styles/main.css" />
   <!-- Firebase SDK -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
@@ -23,47 +23,32 @@
   <header>
     <div class="logo">MyBrand</div>
     <nav class="nav-menu">
-      <a href="#">Home</a>
-      <a href="#product-grid">Products</a>
+      <a href="index.html">Home</a>
+      <a href="index.html#product-grid">Products</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
     </nav>
-      <div class="header-actions">
+    <div class="header-actions">
   <a href="cart.html" class="cart-icon" aria-label="View cart">
     🛒 <span class="cart-count">0</span>
   </a>
   <button id="logout-btn" style="display:none;margin-left:1rem;">Logout</button>
 
 </div>
-
-
-
-</div>
-
     <div class="hamburger-menu">
       <span></span><span></span><span></span>
     </div>
-   
   </header>
 
-  <section class="hero-section">
-    <div class="hero-content">
-      <h1>Exclusive Offer: Biggest Sale!</h1>
-      <p>Up to 50% off on select products. Limited time only.</p>
-      <a href="#product-grid" class="cta-button">Shop Now</a>
-    </div>
-  </section>
-
   <main>
-    <section class="product-grid-container">
-      <h2 class="section-title">Featured Products</h2>
-      <div id="product-grid" class="product-grid"></div>
-    </section>
+    <section id="product-detail" class="product-detail-container"></section>
   </main>
 
- 
 
-<script src="scripts/app.js" defer></script>
+  
 <script src="scripts/auth.js" defer></script>
+
+   
+
 </body>
 </html>

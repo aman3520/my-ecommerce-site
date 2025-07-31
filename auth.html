@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login / Signup – MyBrand</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script>
+  const firebaseConfig = {  apiKey: "AIzaSyBjRoOE0bzJxi9kTMsSMKiB73Ol5ldorxI",
+  authDomain: "ecommerce3520.firebaseapp.com",
+  projectId: "ecommerce3520",
+  storageBucket: "ecommerce3520.appspot.com",
+  messagingSenderId: "611057703034",
+  appId: "1:611057703034:web:8cf71801d17c6e6c2303c3",
+  measurementId: "G-RT1SMKH0YQ"
+};
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+  <header>
+    <div class="logo">MyBrand</div>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#product-grid">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <button id="logout-btn" style="display:none;margin-left:1rem;">Logout</button>
+
+    </nav>
+  </header>
+
+  <main class="auth-wrapper">
+    <form id="signup-form" class="auth-form">
+      <h2>Sign Up</h2>
+      <input type="email" id="signup-email" placeholder="Email" required />
+      <input type="password" id="signup-password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+      <div id="signup-message" class="auth-message"></div>
+    </form>
+
+    <form id="login-form" class="auth-form">
+      <h2>Log In</h2>
+      <input type="email" id="login-email" placeholder="Email" required />
+      <input type="password" id="login-password" placeholder="Password" required />
+      <button type="submit">Log In</button>
+      <div id="login-message" class="auth-message"></div>
+    </form>
+  </main>
+
+
+<script src="scripts/auth.js" defer></script>
+</body>
+</html>
